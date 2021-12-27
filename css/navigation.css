@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Montserrat:wght@200&family=Poppins:wght@200&display=swap');
 .restaurant-navigation{
   background-color: #1e1e1e;
+  font-family: "Imperial Script", cursive;
 }
 .restaurant-navigation-items{
     display: flex;
@@ -14,6 +16,7 @@
     text-decoration: none;
     text-transform: uppercase;
     font-size: 25px;
+    color: white;
 }
 .restaurant-navigation-item a i{
    margin: 0px 10px 0px 10px;
@@ -22,5 +25,5 @@
 .restaurant-navigation-item a:hover {
    transition: 0.6s;
    color: #FFFFFF;
-   text-shadow: 0 0 10px #FFFFFF;
+   text-shadow: 0 0 20px #FFFFFF;
 }

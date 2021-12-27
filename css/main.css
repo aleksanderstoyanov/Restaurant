@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Montserrat:wght@200&family=Poppins:wght@200&display=swap');
+.restaurant-main-section{
+    height: 700px;
+    margin: 0px;
+    background-image:linear-gradient(rgba(128, 128, 128, 0.151),rgb(0, 0, 0)),url("../images/restaurant1.jpeg");
+}
+.restaurant-main-section-content{
+    display: flex;
+    justify-content: center;
+}
+.restaurant-main-section-content h3{
+    font-family: 'Imperial Script', cursive;
+    color: white;
+    font-size: 90px;
+    width: 500px;
+    margin-left: 65px;
+    padding-top: 175px;
+}
+.restaurant-main-section-content blockquote{
+    color: white;
+    font-size: 20px;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+/* hover */
+.restaurant-main-section-content h3:hover{
+    transition: 2s;
+    text-shadow: 0 0 10px #FFFFFF;
+    box-shadow: 0 4px 2px -2px #FFFFFF;
+}

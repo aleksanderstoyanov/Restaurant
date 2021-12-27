@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Montserrat:wght@200&family=Poppins:wght@200&display=swap');
 .restaurant-main-section{
-    height: 700px;
+    height: 730px;
     margin: 0px;
     background-image:linear-gradient(rgba(128, 128, 128, 0.151),rgb(0, 0, 0)),url("../images/restaurant1.jpeg");
 }

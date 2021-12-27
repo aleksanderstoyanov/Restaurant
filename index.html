@@ -15,8 +15,9 @@
 
 <body>
     <nav class="restaurant-navigation">
+        <img src="/images/Silver-Fork-PNG-Free-Download.png" alt="">
         <ul class="restaurant-navigation-items">
-            <li class="restaurant-navigation-item">
+            <li class="restaurant-navigation-item" id="home-nav">
                 <a href="#">Home</a>
             </li>
             <li class="restaurant-navigation-item">
@@ -24,6 +25,11 @@
             </li>
             <li class="restaurant-navigation-item">
                 <a href="#">Menu</a>
+            </li>
+            <li id="closeBar" onclick="openClose(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
             </li>
         </ul>
     </nav>
@@ -43,5 +49,10 @@
     <footer>
     </footer>
 </body>
+<script>
+    function openClose(x) {
+        x.classList.toggle("change");
+    }
+</script>
 
 </html>

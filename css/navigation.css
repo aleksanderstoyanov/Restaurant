@@ -1,29 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Montserrat:wght@200&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
 .restaurant-navigation{
   background-color: #1e1e1e;
-  font-family: "Imperial Script", cursive;
+  font-family: 'Lato', sans-serif;
+}
+.restaurant-navigation img{
+    padding: 1px;
+    width:200px;
+    margin: 7px 9px;
+    position: absolute;
+}
+#home-nav{
+    margin-left: 150px;
 }
 .restaurant-navigation-items{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     margin: 0%;
 }
 .restaurant-navigation-item{
     list-style: none;
-    padding: 2%;
+    padding: 30px;
 }
 .restaurant-navigation-item a{
+    margin-left: 0px;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 17px;
     color: white;
 }
 .restaurant-navigation-item a i{
    margin: 0px 10px 0px 10px;
 }
-/* hover */
+ #closeBar {
+    cursor: pointer;
+    list-style: none;
+    padding: 20px;
+    position:absolute; right:0;
+  } 
+  .bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 5px;
+    background-color: #FFFFFF;
+    margin: 6px 0;
+    transition: 0.4s;
+  } 
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  } 
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+/* hovers */
 .restaurant-navigation-item a:hover {
    transition: 0.6s;
-   color: #FFFFFF;
-   text-shadow: 0 0 20px #FFFFFF;
+   color: orange;
+   text-shadow: 0 0 30px #FFFFFF;
 }

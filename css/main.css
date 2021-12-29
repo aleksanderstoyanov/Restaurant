@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Montserrat:wght@200&family=Poppins:wght@200&display=swap');
 .restaurant-main-section{
-    height: 730px;
+    height: 750px;
     margin: 0px;
     background-image:linear-gradient(rgba(128, 128, 128, 0.151),rgb(0, 0, 0)),url("../images/restaurant1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .restaurant-main-section-content{
     display: flex;
@@ -27,4 +29,32 @@
     transition: 2s;
     text-shadow: 0 0 10px #FFFFFF;
     box-shadow: 0 4px 2px -2px #FFFFFF;
+}
+/* queries */
+@media all and (max-width:600px){
+    .restaurant-main-section-content h3{
+        font-family: 'Imperial Script', cursive;
+        color: white;
+        font-size: 80px;
+        width: 120px;
+        margin-left: 100px;
+        padding-top: 175px;
+    }
+    .restaurant-main-section-content blockquote{
+        font-size: 17px;
+    }
+    .restaurant-main-section{
+        height: 730px;
+        width: 550px;
+        margin: 0px;
+        background-image:linear-gradient(rgba(128, 128, 128, 0.151),rgb(0, 0, 0)),url("../images/restaurant1.jpeg");
+    }
+    .restaurant-main-section-content blockquote{
+        margin-left: 100px;
+    }
+}
+@media all and (max-width:450px){
+    .restaurant-main-section{
+        height: 1000px;
+    }
 }

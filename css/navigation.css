@@ -62,3 +62,30 @@
    color: orange;
    text-shadow: 0 0 30px #FFFFFF;
 }
+/* queries */
+@media all and (max-width:600px){
+  .restaurant-navigation img{
+    display: none;
+  }
+  #closeBar{
+    display: none;
+  }
+  .restaurant-navigation{
+    background-color: #1e1e1e;
+    font-family: 'Lato', sans-serif;
+    height: 200px;
+    width: 550px;
+  }
+  #home-nav{
+    margin-left: 0px;
+  }
+  .restaurant-navigation-items{
+    flex-direction: column;
+  }
+  .restaurant-navigation-item{
+    align-self: center;
+  }
+  .restaurant-navigation-item a{
+    font-size: 18px;
+  }
+}

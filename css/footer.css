@@ -22,3 +22,9 @@
     transition: 0.6s;
     text-shadow: 0px 10px 20px white;
 }
+/* queries */
+@media all and (max-width:600px){
+    .restaurant-footer{
+        width: 525px;
+    }
+}

@@ -20,7 +20,7 @@
     padding: 0;
     border: 1px solid #888;
     width: 80%;
-    height: 500px;
+    height: 550px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     animation-name: animatetop;
     animation-duration: 0.4s
@@ -49,10 +49,44 @@
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
   }
+  .menuModal-items{
+      display: flex;
+      justify-content: center;
+      margin: 0px 5px;
+  }
+  .menuModal-item{
+      margin: 6%;
+  }
+  .menuModal-item h5,p{
+      color: white;
+  }
+  .menuModal-item-image{
+    width: 100%;
+    margin: 4%;
+   }
+   .menuModal-item-content{
+      display: inline-flex;
+      flex-direction: column;
+   }
+   .menuModal-item-content button{
+    border-radius: 0.3rem;
+    border: none;
+    padding: 10px;
+    text-shadow: 0 0 30px #ffffff;
+    color: white;
+    background-color: orange;
+   }
   /* The Close Button */
   .close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
+  }
+  /* hovers */
+  .menuModal-item-content button:hover{
+    transition: 0.3s;
+    text-shadow: 0 0 10px #FFFFFF;
+    background-color: white;
+    color: orange;
   }

@@ -18,3 +18,6 @@ function onClick() {
         }
     }
 }
+function onMenuItemClick(){
+    alert("Successfully added item to cart.");
+}

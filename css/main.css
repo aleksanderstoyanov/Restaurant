@@ -29,6 +29,7 @@
     transition: 2s;
     text-shadow: 0 0 10px #FFFFFF;
     box-shadow: 0 4px 2px -2px #FFFFFF;
+    cursor:default;
 }
 .close:hover,
 .close:focus {

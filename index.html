@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="./js/app.js"></script>
     <title>Restaurant</title>
 </head>
 
@@ -22,10 +24,7 @@
                 <a href="#">Home</a>
             </li>
             <li class="restaurant-navigation-item">
-                <a href="#">About</a>
-            </li>
-            <li class="restaurant-navigation-item">
-                <a href="#">Menu</a>
+                <a href="#" id="menuLink" onclick="onClick()">Menu</a>
             </li>
             <li id="closeBar" onclick="openClose(this)">
                 <div class="bar1"></div>
@@ -43,6 +42,13 @@
                         <p><i>&ldquo;Food is a form of expression.&rdquo; </i></p>
                         <cite>Chef Gusteau</cite>
                     </blockquote>
+                </div>
+
+                <div id="menuModal" class="modal">
+                    <div class="menuModal-content">
+                        <span class="close">&times;</span>
+                        <h1 class="menuModal-header">Menu</h1>
+                    </div>
                 </div>
             </article>
         </section>

@@ -1,9 +1,6 @@
-html{
-    font-family: 'Montserrat', sans-serif;
-    background-color: black;
-    
-}
 html,body{
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     height: 100%;
 }

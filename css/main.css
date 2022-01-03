@@ -30,6 +30,12 @@
     text-shadow: 0 0 10px #FFFFFF;
     box-shadow: 0 4px 2px -2px #FFFFFF;
 }
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 /* queries */
 @media all and (max-width:600px){
     .restaurant-main-section-content h3{

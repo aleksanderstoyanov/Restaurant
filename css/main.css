@@ -6,6 +6,13 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.menu-cart{
+    width: 20%;
+    margin-left: 45%;
+    float: right;
+    background-color: #1e1e1e;
+    display: none;
+}
 .restaurant-main-section-content{
     display: flex;
     justify-content: center;

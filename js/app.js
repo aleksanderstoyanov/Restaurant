@@ -18,6 +18,17 @@ function onClick() {
         }
     }
 }
-function onMenuItemClick(){
-    alert("Successfully added item to cart.");
+function onMenuItemClick(e) {
+    let currentButton = e.target;
+    let parentElement = currentButton.parentElement;
+
+    [productName, productPrice] = Array.from(parentElement.getElementsByTagName("p")).map((p) => {
+        return p.innerHTML;
+    });
+
+    const product = {};
+    product["productName"] = productName;
+    product["productPrice"] = productPrice;
+    
+    localStorage.setItem("product",JSON.stringify(product));
 }

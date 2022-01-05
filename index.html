@@ -43,7 +43,6 @@
                         <cite>Chef Gusteau</cite>
                     </blockquote>
                 </div>
-
                 <div id="menuModal" class="modal">
                     <div class="menuModal-content">
                         <span class="close">&times;</span>
@@ -55,7 +54,7 @@
                                     <h5>Pasta</h3>
                                     <p>cheese / tomato / salt / pasta</p>
                                     <p>$15.00</p>
-                                    <button onclick="onMenuItemClick()">Add to cart</button>
+                                    <button onclick="onMenuItemClick(event)">Add to cart</button>
                                 </div>
                             </article>
                             <article class="menuModal-item">
@@ -64,7 +63,7 @@
                                     <h5>Pasta</h3>
                                     <p>cheese / tomato / salt / pasta</p>
                                     <p>$15.00</p>
-                                    <button onclick="onMenuItemClick()">Add to cart</button>
+                                    <button onclick="onMenuItemClick(event)">Add to cart</button>
                                 </div>
                             </article>
                             <article class="menuModal-item">
@@ -73,11 +72,13 @@
                                     <h5>Pasta</h3>
                                     <p>cheese / tomato / salt / pasta</p>
                                     <p>$15.00</p>
-                                    <button onclick="onMenuItemClick()">Add to cart</button>
+                                    <button onclick="onMenuItemClick(event)">Add to cart</button>
                                 </div>
                             </article>
                         </section>
                     </div>
+                </div>
+                <div class="menu-cart">
                 </div>
             </article>
         </section>
@@ -92,8 +93,17 @@
     </footer>
 </body>
 <script>
-    function openClose(x) {
-        x.classList.toggle("change");
+    function openClose(element) {
+        element.classList.toggle("change");
+        let isOpen=element.classList.contains("change");
+        let menuCart =document.getElementsByClassName("menu-cart")[0];
+
+        if (isOpen) {
+           menuCart.style.display="block";
+        }
+        else{
+            menuCart.style.display="none";
+        }
     }
 </script>
 

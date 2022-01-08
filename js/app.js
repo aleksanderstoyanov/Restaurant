@@ -22,13 +22,18 @@ function onMenuItemClick(e) {
     let currentButton = e.target;
     let parentElement = currentButton.parentElement;
 
-    [productName, productPrice] = Array.from(parentElement.getElementsByTagName("p")).map((p) => {
+    [productName, productIngredients,productPrice] = Array.from(parentElement.getElementsByTagName("p")).map((p) => {
         return p.innerHTML;
     });
 
-    const product = {};
-    product["productName"] = productName;
-    product["productPrice"] = productPrice;
+    let cart=document.getElementById("menu-cart");
     
-    localStorage.setItem("product",JSON.stringify(product));
+    let cartItem=document.createElement("div");
+    cartItem.classList.add("menu-cart-order");
+
+    let cartContent=document.createElement("p");
+    cartContent.innerHTML=`<p>${productName} - ${productPrice}</p></hr>`;
+    cartItem.appendChild(cartContent);
+    
+    cart.appendChild(cartItem);
 }

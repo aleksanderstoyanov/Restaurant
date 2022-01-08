@@ -37,7 +37,7 @@
         <section class="restaurant-main-section">
             <article class="restaurant-main-section-content">
                 <div class="restauraunt-main-container">
-                    <h3>Restaurant Hub</h3>
+                    <h3 class="restaurant-main-header">Restaurant Hub</h3>
                     <blockquote>
                         <p><i>&ldquo;Food is a form of expression.&rdquo; </i></p>
                         <cite>Chef Gusteau</cite>
@@ -51,7 +51,7 @@
                             <article class="menuModal-item">
                                 <div class="menuModal-item-content">
                                     <img class="menuModal-item-image" src="./images/strozzapreti_4.jpg" alt="">
-                                    <h5>Pasta</h3>
+                                    <p>Pasta</p>
                                     <p>cheese / tomato / salt / pasta</p>
                                     <p>$15.00</p>
                                     <button onclick="onMenuItemClick(event)">Add to cart</button>
@@ -60,7 +60,7 @@
                             <article class="menuModal-item">
                                 <div class="menuModal-item-content">
                                     <img class="menuModal-item-image" src="./images/strozzapreti_4.jpg" alt="">
-                                    <h5>Pasta</h3>
+                                    <p>Pasta</p>
                                     <p>cheese / tomato / salt / pasta</p>
                                     <p>$15.00</p>
                                     <button onclick="onMenuItemClick(event)">Add to cart</button>
@@ -69,7 +69,7 @@
                             <article class="menuModal-item">
                                 <div class="menuModal-item-content">
                                     <img class="menuModal-item-image" src="./images/strozzapreti_4.jpg" alt="">
-                                    <h5>Pasta</h3>
+                                    <p>Pasta</p>
                                     <p>cheese / tomato / salt / pasta</p>
                                     <p>$15.00</p>
                                     <button onclick="onMenuItemClick(event)">Add to cart</button>
@@ -78,7 +78,8 @@
                         </section>
                     </div>
                 </div>
-                <div class="menu-cart">
+                <div id="menu-cart">
+                    <h3 class="menu-cart-header">Order</h3>
                 </div>
             </article>
         </section>
@@ -96,7 +97,7 @@
     function openClose(element) {
         element.classList.toggle("change");
         let isOpen=element.classList.contains("change");
-        let menuCart =document.getElementsByClassName("menu-cart")[0];
+        let menuCart =document.getElementById("menu-cart");
 
         if (isOpen) {
            menuCart.style.display="block";

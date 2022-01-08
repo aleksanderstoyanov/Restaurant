@@ -68,7 +68,7 @@
       display: inline-flex;
       flex-direction: column;
    }
-   .menuModal-item-content button{
+   .menuButton{
     border-radius: 0.3rem;
     border: none;
     padding: 10px;
@@ -84,7 +84,7 @@
     font-weight: bold;
   }
   /* hovers */
-  .menuModal-item-content button:hover{
+  .menuButton:hover{
     transition: 0.3s;
     text-shadow: 0 0 10px #FFFFFF;
     background-color: white;

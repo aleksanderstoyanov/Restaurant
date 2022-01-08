@@ -6,27 +6,6 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-#menu-cart{
-    width: 20%;
-    margin-left: 50%;
-    float: right;
-    background-color: #1e1e1e;
-    box-shadow: 0px 0px 4px 0px white;
-    /* display: none; */
-}
-#menu-cart .menu-cart-header{
-    font-size: 45px;
-    margin: 0%;
-    margin-top: 20px;
-    display: flex;
-    color: white;
-    justify-content: center;
-    font-family: 'Imperial Script', cursive;
-}
-.menu-cart-order{
-    display: flex;
-    justify-content:center;
-}
 .restaurant-main-section-content{
     display: flex;
     justify-content: center;

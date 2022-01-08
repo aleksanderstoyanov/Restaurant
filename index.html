@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/modal.css">
-    <script src="./js/app.js"></script>
+    <link rel="stylesheet" href="css/cart.css">
+    <script src="./js/common.js"></script>
+    <script src="./js/menu.js"></script>
     <title>Restaurant</title>
 </head>
 
@@ -26,7 +28,7 @@
             <li class="restaurant-navigation-item">
                 <a href="#" id="menuLink" onclick="onClick()">Menu</a>
             </li>
-            <li id="closeBar" onclick="openClose(this)">
+            <li id="closeBar" onclick="onOpen(this)">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
@@ -54,7 +56,7 @@
                                     <p>Pasta</p>
                                     <p>cheese / tomato / salt / pasta</p>
                                     <p>$15.00</p>
-                                    <button onclick="onMenuItemClick(event)">Add to cart</button>
+                                    <button class="menuButton" onclick="onMenuItemClick(event)">Add to cart</button>
                                 </div>
                             </article>
                             <article class="menuModal-item">
@@ -63,7 +65,7 @@
                                     <p>Pasta</p>
                                     <p>cheese / tomato / salt / pasta</p>
                                     <p>$15.00</p>
-                                    <button onclick="onMenuItemClick(event)">Add to cart</button>
+                                    <button  class="menuButton" onclick="onMenuItemClick(event)">Add to cart</button>
                                 </div>
                             </article>
                             <article class="menuModal-item">
@@ -72,7 +74,7 @@
                                     <p>Pasta</p>
                                     <p>cheese / tomato / salt / pasta</p>
                                     <p>$15.00</p>
-                                    <button onclick="onMenuItemClick(event)">Add to cart</button>
+                                    <button class="menuButton" onclick="onMenuItemClick(event)">Add to cart</button>
                                 </div>
                             </article>
                         </section>
@@ -80,6 +82,9 @@
                 </div>
                 <div id="menu-cart">
                     <h3 class="menu-cart-header">Order</h3>
+                    <div class="menu-cart-container">
+                    </div>
+                    <button class="menuButton" onclick="onMenuCheckout()">Checkout</button>
                 </div>
             </article>
         </section>
@@ -93,19 +98,4 @@
         </div>
     </footer>
 </body>
-<script>
-    function openClose(element) {
-        element.classList.toggle("change");
-        let isOpen=element.classList.contains("change");
-        let menuCart =document.getElementById("menu-cart");
-
-        if (isOpen) {
-           menuCart.style.display="block";
-        }
-        else{
-            menuCart.style.display="none";
-        }
-    }
-</script>
-
 </html>

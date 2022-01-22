@@ -1,7 +1,7 @@
 #menu-cart{
     width: 20%;
     margin-left: auto;
-    margin-top: 5%;
+    margin-top: 15%;
     width: 300px;
     float: right;
     background-color: #1e1e1e;
@@ -36,4 +36,15 @@
     display: flex;
     justify-content: center;
     width: 50%;
+}
+@media all and (max-width:600px)  {
+    #menu-cart{
+        float: none;
+        margin-left: auto;
+        height: 200px;
+        margin-right: auto;
+    }
+    #menu-cart p{
+        display: none;
+    }
 }

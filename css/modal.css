@@ -90,3 +90,15 @@
     background-color: white;
     color: orange;
   }
+  @media all and (max-width:600px){
+    .menuModal-content{
+      height: 1200px;
+    }
+    .menuModal-items{
+      display: block;
+      margin-left: 25%;
+    }
+    .menuModal-item-content{
+      width: 60%;
+    }
+  }

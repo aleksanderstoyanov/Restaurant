@@ -1,4 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Restaurant.Data.Models;
+using Restaurant.Services.Contracts;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Restaurant.Controllers
 {
@@ -6,10 +10,16 @@ namespace Restaurant.Controllers
     [Route("[controller]")]
     public class RestaurantController : Controller
     {
-       [HttpGet]
-       public IActionResult Get()
+        private readonly IProductService productService;
+
+        public RestaurantController(IProductService productService)
         {
-            return Ok("Hello: test,test");
+            this.productService = productService;
+        }
+        [HttpGet]
+        public ActionResult<IEnumerable<Product>> GetProducts()
+        {
+            return this.productService.GetProducts().ToList();
         }
     }
 }

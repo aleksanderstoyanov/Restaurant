@@ -1,11 +1,10 @@
 function onMenuItemClick(e) {
     let currentButton = e.target;
     let parentElement = currentButton.parentElement;
-
-    [productName, productIngredients, productPrice] = Array.from(parentElement.getElementsByTagName("p")).map((p) => {
+    
+    [productName, productPrice] = Array.from(parentElement.getElementsByTagName("p")).map((p) => {
         return p.innerHTML;
     });
-
     let cart = document.getElementsByClassName("menu-cart-container")[0];
 
     let cartItem = document.createElement("div");

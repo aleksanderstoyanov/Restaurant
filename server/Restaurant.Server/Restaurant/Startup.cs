@@ -65,7 +65,12 @@ namespace Restaurant
             app.UseHttpsRedirection();
 
             app.UseRouting();
-
+            app.UseCors(policy =>
+            {
+                policy.AllowAnyHeader();
+                policy.AllowAnyMethod();
+                policy.AllowAnyOrigin();
+            });
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

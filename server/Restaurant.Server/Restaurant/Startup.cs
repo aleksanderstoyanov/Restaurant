@@ -9,6 +9,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Restaurant.Data;
+using Restaurant.Seeding;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -53,6 +54,7 @@ namespace Restaurant
             using (var scope = app.ApplicationServices.CreateScope())
             {
                 var database = scope.ServiceProvider.GetService<RestaurantDbContext>();
+                new ProductsSeeder().SeedAsync(database).GetAwaiter().GetResult();
                 database.Database.Migrate();
             }
 
